@@ -1,0 +1,13 @@
+server:
+  port: 8081
+
+spring:
+  profiles:
+    active: local, mysql
+
+datasource:
+  mysql:
+    jdbcUrl: jdbc:mysql://localhost:3306/user
+    driverClassName: com.mysql.cj.jdbc.Driver
+    userName: root
+    password: Abhi@2109
