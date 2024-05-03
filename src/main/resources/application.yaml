@@ -11,3 +11,35 @@ datasource:
     driverClassName: com.mysql.cj.jdbc.Driver
     userName: root
     password: Abhi@2109
+
+---
+spring:
+  profiles:
+    configure:
+      on-activate: dev
+
+datasource:
+  mysql:
+    jdbcUrl:
+    driverClassName:
+    username:
+    password:
+
+---
+spring:
+  profiles:
+    configure:
+      on-activate: stage
+
+datasource:
+  mysql:
+    jdbcUrl:
+    driverClassName:
+    username:
+    password:
+
+---
+spring:
+  profiles:
+    configure:
+      on-activate: prod
